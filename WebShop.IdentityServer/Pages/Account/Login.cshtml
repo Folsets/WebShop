@@ -1,0 +1,31 @@
+﻿@page
+@model WebShop.IdentityServer.Pages.Login
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <input asp-for="Form.RedirectUrl" type="hidden" value="@Model.Form.RedirectUrl">
+
+        <label for="Username"></label>
+        <input asp-for="Form.Username" type="text">
+        <span asp-validation-for="Form.Username"></span>
+
+        <label for="Password"></label>
+        <input asp-for="Form.Password" type="password">
+        <span asp-validation-for="Form.Password"></span>
+
+        <button type="submit">Sign In</button>
+    </form>
+</div>
+</body>
+</html>

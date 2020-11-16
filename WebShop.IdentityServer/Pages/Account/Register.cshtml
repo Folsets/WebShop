@@ -1,0 +1,56 @@
+﻿@page
+@model WebShop.IdentityServer.Pages.Register
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <form method="post">
+
+        <div>
+            <label>*Username:</label>
+            <input asp-for="Form.Username" type="text">
+            <span asp-validation-for="Form.Username"></span>
+        </div>
+
+        <div>
+            <label>*Email:</label>
+            <input asp-for="Form.Email" type="text">
+        </div>
+
+        <div>
+            <label>Имя:</label>
+            <input asp-for="Form.FirstName" type="text">
+        </div>
+
+        <div>
+            <label>Фамилия:</label>
+            <input asp-for="Form.LastName" type="text">
+        </div>
+
+        <div>
+            <label>*Пароль:</label>
+            <input asp-for="Form.Password" type="text">
+        </div>
+
+        <div>
+            <label>*Подтвердите пароль:</label>
+            <input asp-for="Form.ConfirmPassword" type="text">
+        </div>
+
+        <div>
+            <button type="submit">Зарегистрироваться</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
