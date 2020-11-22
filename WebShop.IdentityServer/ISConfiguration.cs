@@ -68,6 +68,7 @@ namespace WebShop.IdentityServer
                     },
 
                     RedirectUris = {"https://localhost:5005/signin-oidc"},
+                    PostLogoutRedirectUris = {"https://localhost:5005/Home/Index"},
 
                     AllowOfflineAccess = true,
 
@@ -75,6 +76,30 @@ namespace WebShop.IdentityServer
 
                     // puts all the claims in the id token
                     // AlwaysIncludeUserClaimsInIdToken = true
+                },
+
+                new Client
+                {
+                    ClientId = "api_swagger",
+                    ClientName = "Swagger UI for API",
+                    ClientSecrets = {new Secret("secret_swagger_api_bla_bla".Sha256())},
+
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RequirePkce = true,
+                    RequireClientSecret = false,
+
+                    RedirectUris = {"https://localhost:5003/swagger/oauth2-redirect.html"},
+                    PostLogoutRedirectUris = {"https://localhost:5003/swagger/index.html"},
+                    AllowedCorsOrigins = {"https://localhost:5003"},
+
+                    RequireConsent = false,
+
+                    AllowedScopes =
+                    {
+                        OidcConstants.StandardScopes.OpenId,
+                        OidcConstants.StandardScopes.Profile,
+                        Constants.WebShopApiResource
+                    },
                 }
             };
     }
@@ -87,4 +112,3 @@ namespace WebShop.IdentityServer
         public static string WebShopApiResource = "WebShop.Api";
     }
 }
-

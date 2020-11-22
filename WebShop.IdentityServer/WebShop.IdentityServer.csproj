@@ -9,7 +9,8 @@
       <PackageReference Include="IdentityServer4" Version="3.1.4" />
       <PackageReference Include="IdentityServer4.AspNetIdentity" Version="3.1.1" />
       <PackageReference Include="IdentityServer4.EntityFramework" Version="3.1.4" />
-      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.10" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.10" />
       <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
         <PrivateAssets>all</PrivateAssets>
@@ -21,6 +22,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\WebShop.Data\WebShop.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\css\layout.css" />
     </ItemGroup>
 
 </Project>

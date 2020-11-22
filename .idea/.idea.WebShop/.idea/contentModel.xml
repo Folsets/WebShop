@@ -345,7 +345,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="ClientsController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -353,6 +353,10 @@
               <e p="WebShop.Api.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Options" t="Include">
+          <e p="AuthorizeCheckOperationFilter.cs" t="Include" />
+          <e p="SwaggerOptions.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -362,19 +366,57 @@
         <e p="WeatherForecast.cs" t="Include" />
         <e p="WebShop.Api.csproj" t="IncludeRecursive" />
       </e>
+      <e p="WebShop.Data" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="Entities" t="Include">
+          <e p="Basket.cs" t="Include" />
+          <e p="Client.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="Delivery.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="Storage.cs" t="Include" />
+        </e>
+        <e p="Enums" t="Include">
+          <e p="CategoryEnum.cs" t="Include" />
+          <e p="OrderStatus.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IBasketRepository.cs" t="Include" />
+          <e p="IClientRepository.cs" t="Include" />
+          <e p="ICustomerRepository.cs" t="Include" />
+          <e p="IDeliveryRepository.cs" t="Include" />
+          <e p="IGenericRepository.cs" t="Include" />
+          <e p="IOrderRepository.cs" t="Include" />
+          <e p="IProductRepository.cs" t="Include" />
+          <e p="IStorageRepository.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="WebShop.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repos" t="Include">
+          <e p="ClientRepository.cs" t="Include" />
+        </e>
+        <e p="WebShop.Data.csproj" t="IncludeRecursive" />
+      </e>
       <e p="WebShop.IdentityServer" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="AuthController.cs" t="Include" />
+        </e>
         <e p="Data" t="Include">
-          <e p="AppDbContext.cs" t="Include" />
           <e p="Migrations" t="Include">
-            <e p="app" t="Include">
-              <e p="20201116145524_init.cs" t="Include" />
-              <e p="20201116145524_init.Designer.cs" t="Include" />
-              <e p="20201116155856_addTables.cs" t="Include" />
-              <e p="20201116155856_addTables.Designer.cs" t="Include" />
-              <e p="AppDbContextModelSnapshot.cs" t="Include" />
+            <e p="Identity" t="Include">
+              <e p="20201118211650_init.cs" t="Include" />
+              <e p="20201118211650_init.Designer.cs" t="Include" />
+              <e p="MyIdentityDbContextModelSnapshot.cs" t="Include" />
             </e>
             <e p="IdentityServer" t="Include">
               <e p="ConfigurationDb" t="Include">
@@ -389,19 +431,11 @@
               </e>
             </e>
           </e>
-          <e p="Repository" t="Include">
-            <e p="IRepo.cs" t="Include" />
-            <e p="Repo.cs" t="Include" />
-          </e>
+          <e p="MyIdentityDbContext.cs" t="Include" />
         </e>
         <e p="ISConfiguration.cs" t="Include" />
         <e p="Models" t="Include">
-          <e p="Basket.cs" t="Include" />
-          <e p="Category.cs" t="Include" />
-          <e p="Delivery.cs" t="Include" />
           <e p="LoginViewModel.cs" t="Include" />
-          <e p="Order.cs" t="Include" />
-          <e p="Product.cs" t="Include" />
           <e p="RegisterViewModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -412,15 +446,6 @@
             </e>
           </e>
         </e>
-        <e p="Pages" t="Include">
-          <e p="_ViewImports.cshtml" t="Include" />
-          <e p="Account" t="Include">
-            <e p="Login.cshtml" t="Include" />
-            <e p="Login.cshtml.cs" t="Include" />
-            <e p="Register.cshtml" t="Include" />
-            <e p="Register.cshtml.cs" t="Include" />
-          </e>
-        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -429,7 +454,27 @@
         <e p="Startup.cs" t="Include" />
         <e p="tempkey.jwk" t="Include" />
         <e p="tempkey.rsa" t="Include" />
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="Auth" t="Include">
+            <e p="Login.cshtml" t="Include" />
+            <e p="Register.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+        </e>
         <e p="WebShop.IdentityServer.csproj" t="IncludeRecursive" />
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="form.css" t="Include" />
+            <e p="layout.css" t="Include" />
+          </e>
+          <e p="images" t="Include">
+            <e p="mail.png" t="Include" />
+            <e p="phone.png" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="WebShop.sln" t="IncludeFlat" />
     </e>

@@ -6,6 +6,8 @@
     <projectFile>WebShop.IdentityServer/WebShop.IdentityServer.csproj</projectFile>
     <projectFile>WebShop.Data/WebShop.Data.csproj</projectFile>
     <projectFile>MvcClient/MvcClient.csproj</projectFile>
+    <projectFile>WebShop.IdentityLibrary/WebShop.IdentityLibrary.csproj</projectFile>
+    <projectFile>WebShop.DataLibrary/WebShop.DataLibrary.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
@@ -17,10 +19,49 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="914693a4-b818-46d1-9440-13050654c8bd" name="Default Changelist" comment="" />
+    <list default="true" id="914693a4-b818-46d1-9440-13050654c8bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.Api/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.Api/WebShop.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.Api/WebShop.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/AppDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/Migrations/App/20201116145524_init.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/Migrations/App/20201116145524_init.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/Migrations/App/20201116155856_addTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/Migrations/App/20201116155856_addTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/Migrations/App/AppDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/Repository/IRepo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Data/Repository/Repo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/ISConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/ISConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Models/Basket.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Models/Category.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Models/Delivery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Models/LoginViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/Models/LoginViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Models/Order.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Models/Product.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Models/RegisterViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/Models/RegisterViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Login.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Login.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Register.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Register.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Pages/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/WebShop.IdentityServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/WebShop.IdentityServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,70 +70,85 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="18760e04-d82f-4162-8a10-ef13dc960811" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2151852C-A137-4999-90AC-722EF4981901/2A/ConfigurationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1E91381A-E6FB-483F-B621-BC63C0219EA8/30/HttpContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83389B32-774C-4052-9052-7EE9EF7C2FD2/34/OpenApiInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D883C239-C9D6-485B-8B9A-FCDACAA0E7AA/27/ExecutorFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/804CA853-9C6E-4025-80A1-F012B0A50C56/D/SqlMapper.Async.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C53339FA-33AE-4A79-B417-6C8AF57A8C4B/1D/UserManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/25F/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1BA52DC0-B103-422E-BA91-AD87A1AA9FE3/9/ServiceProviderServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0C2811BE-F51A-4055-8F7E-A1FFA1110A6D/5/Claim.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/31F94AF4-0455-4C4C-BD4F-AB58A9F2D1BF/19/First.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6F471ED1-1B82-4FCD-86EC-F90D430AAD39/2/IdentityServerEntityFrameworkBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5FCD166E-D94E-49FA-82FC-5351507A04A6/A/Client.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/25F/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebShop.Client/Startup.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Data/Data/IdentityDbContext.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Data/AppDbContext.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Data/appsettings.json" />
-        <option value="$PROJECT_DIR$/WebShop.Data/Repository/IRepo.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Data/Repository/Repo.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/appsettings.json" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/appsettings.json" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/script.txt" />
-        <option value="$PROJECT_DIR$/WebShop.Data/Startup.cs" />
+        <option value="$PROJECT_DIR$/WebShop.DataLibrary/AppDbHelper.cs" />
         <option value="$PROJECT_DIR$/WebShop.Data/Data/AppDbContext.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Data/Repository/Repo.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Data/Repository/IRepo.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Startup.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Controllers/AccountController.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Register.cshtml" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/ViewModels/LoginViewModel.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Login.cshtml" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Login.cshtml.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/_ViewImports.cshtml" />
-        <option value="$PROJECT_DIR$/MvcClient/Startup.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/MvcClient/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Controllers/WeatherForecastController.cs" />
-        <option value="$PROJECT_DIR$/MvcClient/Controllers/HomeController.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Login.cshtml.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/LoginViewModel.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Login.cshtml" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/RegisterViewModel.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Register.cshtml.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Register.cshtml" />
-        <option value="$PROJECT_DIR$/WebShop/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/WebShop/ClientApp/src/app/shared/services/auth.service.ts" />
-        <option value="$PROJECT_DIR$/WebShop/ClientApp/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/WebShop/ClientApp/src/app/nav-menu/nav-menu.component.ts" />
-        <option value="$PROJECT_DIR$/WebShop/ClientApp/src/app/nav-menu/nav-menu.component.html" />
-        <option value="$PROJECT_DIR$/WebShop/ClientApp/src/app/shared/constants.ts" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/ISConfiguration.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/WebShop.IdentityServer.csproj" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Startup.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/Products.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/Category.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Program.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/Order.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Data/CusomIdentityDbContext.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Data/WebShopDbContext.cs" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/Data/AppDbContext.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/Product.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/Basket.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/Delivery.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Startup.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Data/MyIdentityDbContext.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Enums/OrderStatus.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Orders.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Order.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Customer.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Client.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Delivery.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Basket.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Storage.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Products.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/ICategoryRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Category.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Product.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Enums/CategoryEnum.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/IStorageRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/IDeliveryRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/IBasketRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/IOrderRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/IProductRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/IClientRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/ICustomerRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/DependencyInjection.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Interfaces/IGenericRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Pages/Account/Register.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Api/appsettings.json" />
+        <option value="$PROJECT_DIR$/WebShop.Api/Options/SwaggerOptions.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Program.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Api/Options/AuthorizeCheckOperationFilter.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Api/Controllers/ClientsController.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/_ViewImports.cshtml" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/LoginViewModel.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Repos/ClientRepository.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/appsettings.json" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Controllers/AuthController.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/ISConfiguration.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Shared/Content/layout.css" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Startup.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/wwwroot/css/layout.css" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Auth/Login.cshtml" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Auth/Register.cshtml" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/RegisterViewModel.cs" />
+        <option value="$PROJECT_DIR$/WebShop.IdentityServer/wwwroot/css/form.css" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1kLNfSjS5kTMyk8qyDH3J0apE4o" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -104,19 +160,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="C:\Users\sapar\Desktop\aspnet-ng\WebShop\WebShop\ClientApp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Compound.RunAll">
+  <component name="RunManager" selected="Compound.Swagger&amp;IdentityServer">
     <configuration name="RunAll" type="CompoundRunConfigurationType">
       <toRun name="WebShop" type="LaunchSettings" />
       <toRun name="WebShop.Api" type="LaunchSettings" />
       <toRun name="WebShop.IdentityServer" type="LaunchSettings" />
       <method v="2" />
     </configuration>
+    <configuration name="Swagger&amp;IdentityServer" type="CompoundRunConfigurationType">
+      <toRun name="WebShop.Api" type="LaunchSettings" />
+      <toRun name="WebShop.IdentityServer" type="LaunchSettings" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="CompoundRunConfigurationType">
-      <toRun name="WebShop" type="LaunchSettings" />
       <toRun name="WebShop.Api" type="LaunchSettings" />
       <toRun name="WebShop.IdentityServer" type="LaunchSettings" />
       <method v="2" />
@@ -125,21 +185,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MvcClient/MvcClient.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
       <option name="LAUNCH_PROFILE_NAME" value="MvcClient" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="MvcClient: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MvcClient/MvcClient.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -166,85 +211,10 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebShop: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebShop/WebShop.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
     <configuration name="WebShop.Api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebShop.Api/WebShop.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
       <option name="LAUNCH_PROFILE_NAME" value="WebShop.Api" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebShop.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebShop.Api/WebShop.Api.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebShop.Data" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebShop.Data/WebShop.Data.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
-      <option name="LAUNCH_PROFILE_NAME" value="WebShop.Data" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebShop.Data: IIS Express (1)" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebShop.Data/WebShop.Data.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebShop.Data: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebShop.Data/WebShop.Data.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -271,40 +241,14 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebShop.IdentityServer: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebShop.IdentityServer/WebShop.IdentityServer.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.MvcClient" />
-      <item itemvalue=".NET Launch Settings Profile.MvcClient: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebShop" />
       <item itemvalue=".NET Launch Settings Profile.WebShop.Api" />
-      <item itemvalue=".NET Launch Settings Profile.WebShop.Api: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebShop.Data" />
-      <item itemvalue=".NET Launch Settings Profile.WebShop.Data: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebShop.IdentityServer" />
-      <item itemvalue=".NET Launch Settings Profile.WebShop.IdentityServer: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebShop: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebShop.Data: IIS Express (1)" />
       <item itemvalue="Compound.RunAll" />
+      <item itemvalue="Compound.Swagger&amp;IdentityServer" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue=".NET Launch Settings Profile.WebShop.Data: IIS Express (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -318,7 +262,13 @@
       <workItem from="1605488339063" duration="252000" />
       <workItem from="1605488638458" duration="6839000" />
       <workItem from="1605517251836" duration="18162000" />
-      <workItem from="1605537607749" duration="6553000" />
+      <workItem from="1605537607749" duration="9698000" />
+      <workItem from="1605551931602" duration="628000" />
+      <workItem from="1605552594942" duration="968000" />
+      <workItem from="1605715299749" duration="4859000" />
+      <workItem from="1605872770634" duration="41304000" />
+      <workItem from="1606063379751" duration="2134000" />
+      <workItem from="1606067957560" duration="15424000" />
     </task>
     <servers />
   </component>
@@ -332,7 +282,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -343,121 +305,204 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605527194255">
+    <state x="512" y="236" key="#Notifications" timestamp="1605548776259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="512" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1605548776259" />
+    <state x="361" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605972059183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605972059183" />
     <state x="361" y="71" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605527194255" />
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1605530771254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605530771254" />
-    <state width="449" height="466" key="DebuggerActiveHint" timestamp="1605534517262">
+    <state x="516" y="257" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1605894715276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="516" y="257" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605894715276" />
+    <state width="469" height="466" key="DebuggerActiveHint" timestamp="1606034104125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="469" height="466" key="DebuggerActiveHint/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606034104125" />
     <state width="449" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1605534517262" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1605542266792">
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1605548866828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605542266792" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1605542266792">
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1605548866828" />
+    <state x="453" y="116" key="Github.UntrackedFilesDialog" timestamp="1605548747609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605542266792" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1605542266792">
+    <state x="453" y="116" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605548747609" />
+    <state width="1493" height="227" key="GridCell.Tab.0.bottom" timestamp="1606086842466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605542266792" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1605542266792">
+    <state width="1493" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842466" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605551897490" />
+    <state width="1493" height="227" key="GridCell.Tab.0.center" timestamp="1606086842466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605542266792" />
-    <state width="1493" height="273" key="GridCell.Tab.1.bottom" timestamp="1605538858309">
+    <state width="1493" height="227" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842466" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605551897490" />
+    <state width="1493" height="227" key="GridCell.Tab.0.left" timestamp="1606086842466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605538858309" />
-    <state width="1493" height="273" key="GridCell.Tab.1.center" timestamp="1605538858309">
+    <state width="1493" height="227" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842466" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605551897489" />
+    <state width="1493" height="227" key="GridCell.Tab.0.right" timestamp="1606086842466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605538858309" />
-    <state width="1493" height="273" key="GridCell.Tab.1.left" timestamp="1605538858309">
+    <state width="1493" height="227" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842466" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605551897490" />
+    <state width="1493" height="227" key="GridCell.Tab.1.bottom" timestamp="1606086842317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605538858309" />
-    <state width="1493" height="273" key="GridCell.Tab.1.right" timestamp="1605538858309">
+    <state width="1493" height="227" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842317" />
+    <state width="1493" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605551897425" />
+    <state width="1493" height="227" key="GridCell.Tab.1.center" timestamp="1606086842317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605538858309" />
-    <state width="1493" height="273" key="GridCell.Tab.2.bottom" timestamp="1605538858310">
+    <state width="1493" height="227" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842317" />
+    <state width="1493" height="273" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605551897424" />
+    <state width="1493" height="227" key="GridCell.Tab.1.left" timestamp="1606086842317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605538858310" />
-    <state width="1493" height="273" key="GridCell.Tab.2.center" timestamp="1605538858309">
+    <state width="1493" height="227" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842317" />
+    <state width="1493" height="273" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605551897424" />
+    <state width="1493" height="227" key="GridCell.Tab.1.right" timestamp="1606086842317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605538858309" />
-    <state width="1493" height="273" key="GridCell.Tab.2.left" timestamp="1605538858309">
+    <state width="1493" height="227" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842317" />
+    <state width="1493" height="273" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605551897424" />
+    <state width="1493" height="227" key="GridCell.Tab.2.bottom" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605538858309" />
-    <state width="1493" height="273" key="GridCell.Tab.2.right" timestamp="1605538858310">
+    <state width="1493" height="227" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605551897427" />
+    <state width="1493" height="227" key="GridCell.Tab.2.center" timestamp="1606086842317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605538858310" />
-    <state width="1493" height="273" key="GridCell.Tab.3.bottom" timestamp="1605538858311">
+    <state width="1493" height="227" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842317" />
+    <state width="1493" height="273" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605551897427" />
+    <state width="1493" height="227" key="GridCell.Tab.2.left" timestamp="1606086842317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605538858311" />
-    <state width="1493" height="273" key="GridCell.Tab.3.center" timestamp="1605538858310">
+    <state width="1493" height="227" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842317" />
+    <state width="1493" height="273" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605551897427" />
+    <state width="1493" height="227" key="GridCell.Tab.2.right" timestamp="1606086842317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1605538858310" />
-    <state width="1493" height="273" key="GridCell.Tab.3.left" timestamp="1605538858310">
+    <state width="1493" height="227" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842317" />
+    <state width="1493" height="273" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605551897427" />
+    <state width="1493" height="227" key="GridCell.Tab.3.bottom" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1605538858310" />
-    <state width="1493" height="273" key="GridCell.Tab.3.right" timestamp="1605538858311">
+    <state width="1493" height="227" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605551897429" />
+    <state width="1493" height="227" key="GridCell.Tab.3.center" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1605538858311" />
-    <state width="1493" height="273" key="GridCell.Tab.4.bottom" timestamp="1605538858312">
+    <state width="1493" height="227" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1605551897428" />
+    <state width="1493" height="227" key="GridCell.Tab.3.left" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605538858312" />
-    <state width="1493" height="273" key="GridCell.Tab.4.center" timestamp="1605538858312">
+    <state width="1493" height="227" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1605551897428" />
+    <state width="1493" height="227" key="GridCell.Tab.3.right" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1605538858312" />
-    <state width="1493" height="273" key="GridCell.Tab.4.left" timestamp="1605538858311">
+    <state width="1493" height="227" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1605551897428" />
+    <state width="1493" height="227" key="GridCell.Tab.4.bottom" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1605538858311" />
-    <state width="1493" height="273" key="GridCell.Tab.4.right" timestamp="1605538858312">
+    <state width="1493" height="227" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605551897432" />
+    <state width="1493" height="227" key="GridCell.Tab.4.center" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="273" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1605538858312" />
-    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1605515513728">
+    <state width="1493" height="227" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1605551897431" />
+    <state width="1493" height="227" key="GridCell.Tab.4.left" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1605515513728" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1605548693654">
+    <state width="1493" height="227" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1605551897430" />
+    <state width="1493" height="227" key="GridCell.Tab.4.right" timestamp="1606086842318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605548693654" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605488426589">
+    <state width="1493" height="227" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606086842318" />
+    <state width="1493" height="273" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1605551897431" />
+    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1606071167470">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605488426589" />
+    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606071167470" />
+    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1605732190940" />
+    <state x="587" y="101" key="RiderGenerateDialog" timestamp="1605894830846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="587" y="101" key="RiderGenerateDialog/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605894830846" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1605552072834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605552072834" />
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1605874619622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605874619622" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605552617405">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605552617405" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1605521115529">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1605521115529" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1605540417479">
+    <state x="451" y="226" width="633" height="372" key="XPathView.FindDialog.DIMENSION_SERVICE_KEY.SIMPLE" timestamp="1605893813268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605540417479" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605536277929">
+    <state x="451" y="226" width="633" height="372" key="XPathView.FindDialog.DIMENSION_SERVICE_KEY.SIMPLE/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605893813268" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605548823091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605536277929" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605548823091" />
+    <state x="441" y="11" width="837" height="801" key="find.popup" timestamp="1605893894649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="441" y="11" width="837" height="801" key="find.popup/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605893894649" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605552608406">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605552608406" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606081727135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606081727135" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605552956350" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebShop.IdentityServer/Controllers/AuthController.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\sapar\Desktop\aspnet-ng\WebShop\WebShop.IdentityServer\Controllers\AuthController.cs" initialLine="41">
+            <startOffsets>
+              <option value="1441" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1503" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
   </component>
 </project>

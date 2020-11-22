@@ -4,7 +4,7 @@ namespace WebShop.IdentityServer.ViewModels
 {
     public class LoginViewModel
     {
-        public string RedirectUrl { get; set; }
+        public string ReturnUrl { get; set; }
 
         [Required]
         public string Username { get; set; }

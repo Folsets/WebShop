@@ -8,6 +8,7 @@ using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -68,7 +69,7 @@ namespace WebShop.IdentityServer
                     context.SaveChanges();
                 }
 
-                var appContext = serviceScope.ServiceProvider.GetRequiredService<AppDbContext>();
+                var appContext = serviceScope.ServiceProvider.GetRequiredService<MyIdentityDbContext>();
                 if (!appContext.Users.Any())
                 {
                     var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();

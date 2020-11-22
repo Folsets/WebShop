@@ -1,20 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using IdentityModel;
-using IdentityServer4.EntityFramework.DbContexts;
-using IdentityServer4.EntityFramework.Mappers;
+using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
+using WebShop.Data;
+using WebShop.Data.Interfaces;
+using WebShop.Data.Repos;
 using WebShop.IdentityServer.Data;
 
 namespace WebShop.IdentityServer
@@ -22,7 +18,6 @@ namespace WebShop.IdentityServer
     public class Startup
     {
         private readonly IConfiguration _configuration;
-
         public Startup(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -30,34 +25,35 @@ namespace WebShop.IdentityServer
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
-            services.AddDbContext<AppDbContext>(config =>
+            services.AddTransient<IClientRepository, ClientRepository>();
+
+            services.AddDbContext<MyIdentityDbContext>(config =>
             {
-                // config.UseInMemoryDatabase("Memory");
-                config.UseSqlServer(_configuration.GetConnectionString("WebShopConnection"));
+                config.UseSqlServer(_configuration.GetConnectionString("IdentityConnection"));
             });
 
             services.AddIdentity<IdentityUser, IdentityRole>(config =>
             {
-                // configure later
                 config.Password.RequireDigit = false;
                 config.Password.RequireLowercase = false;
                 config.Password.RequireUppercase = false;
                 config.Password.RequireNonAlphanumeric = false;
                 config.Password.RequiredLength = 4;
             })
-                .AddEntityFrameworkStores<AppDbContext>()
+                .AddEntityFrameworkStores<MyIdentityDbContext>()
                 .AddDefaultTokenProviders();
 
             services.ConfigureApplicationCookie(config =>
             {
-                config.LoginPath = "/Account/Login";
+                config.LoginPath = "/Auth/Login";
+                config.LogoutPath = "/Auth/Logout";
                 config.Cookie.Name = "IdentityServer.Cookie";
             });
 
             var migrationsAssembly = typeof(Startup).Assembly.GetName().Name;
-            var connectionString = _configuration.GetConnectionString("WebShopIdentityConnection");
+            var connectionString = _configuration.GetConnectionString("IdentityServer4Connection");
             services.AddIdentityServer()
                 .AddAspNetIdentity<IdentityUser>()
                 .AddConfigurationStore(options =>
@@ -70,10 +66,8 @@ namespace WebShop.IdentityServer
                     options.ConfigureDbContext = b => b.UseSqlServer(connectionString,
                         sql => sql.MigrationsAssembly(migrationsAssembly));
                 })
-                // .AddInMemoryClients(ISConfiguration.Clients)
-                // .AddInMemoryIdentityResources(ISConfiguration.IdentityResources)
-                // .AddInMemoryApiResources(ISConfiguration.Apis)
                 .AddDeveloperSigningCredential();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -84,14 +78,15 @@ namespace WebShop.IdentityServer
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseIdentityServer();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context => { await context.Response.WriteAsync("Hello World!"); });
-                endpoints.MapRazorPages();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }
