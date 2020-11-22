@@ -4,6 +4,8 @@ namespace WebShop.IdentityServer.ViewModels
 {
     public class LoginViewModel
     {
+        public bool Failed { get; set; } = false;
+
         public string ReturnUrl { get; set; }
 
         [Required]
