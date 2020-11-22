@@ -1,0 +1,79 @@
+﻿body{
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #70B7FF 0%, #FFF 100%);
+}
+
+.field {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field span {
+    margin-top: 10px;
+    color: #9f0000;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 22px;
+    width: 280px;
+}
+
+.input-field input {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+
+.web-shop-kz {
+    color: #FFF;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px white; /* Параметры тени */
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.goto a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+.goto a:hover {
+    color: #000;
+    font-weight: 700;
+}
+
+.field button {
+    background: #39F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-align: center;
+    padding: 15px;
+    height: 45px;
+}
+
+.field button:hover {
+    transform: scale(0.92);
+    background: #006ccb;
+}
+
