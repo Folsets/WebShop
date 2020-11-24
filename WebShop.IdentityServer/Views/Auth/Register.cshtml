@@ -12,73 +12,69 @@
     <link type="text/css" rel="stylesheet" href="~/css/form.css"/>
 </head>
 <body>
-<div class="section">
-    <form method="post">
-        <input type="hidden" asp-for="ReturnUrl">
 
-        <a href="#" class="field web-shop-kz">
-            WebShopKZ
+<form method="post">
+    <input type="hidden" asp-for="ReturnUrl">
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Username">Имя пользователя:</label>
+            <input asp-for="Username" type="text">
+        </div>
+        <span asp-validation-for="Username"></span>
+    </div>
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Username">E-mail:</label>
+            <input asp-for="Email" type="text">
+        </div>
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Username">Имя:</label>
+            <input asp-for="FirstName" type="text">
+        </div>
+        <span asp-validation-for="FirstName"></span>
+    </div>
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Username">Фамилия:</label>
+            <input asp-for="LastName" type="text">
+        </div>
+        <span asp-validation-for="LastName"></span>
+    </div>
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Username">Пароль:</label>
+            <input asp-for="Password" type="text">
+        </div>
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Username">Подтвердите пароль:</label>
+            <input asp-for="ConfirmPassword" type="text">
+        </div>
+        <span asp-validation-for="ConfirmPassword"></span>
+    </div>
+
+    <div class="field button-submit">
+        <button type="submit">Зарегистрироваться</button>
+    </div>
+
+    <div class="field goto">
+        <a asp-controller="Auth" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
+            Уже есть аккаунт? Войти
         </a>
+    </div>
 
-        <div class="field">
-            <div class="input-field">
-                <label for="Username">Имя пользователя:</label>
-                <input asp-for="Username" type="text">
-            </div>
-            <span asp-validation-for="Username"></span>
-        </div>
+</form>
 
-        <div class="field">
-            <div class="input-field">
-                <label for="Username">E-mail:</label>
-                <input asp-for="Email" type="text">
-            </div>
-            <span asp-validation-for="Email"></span>
-        </div>
-
-        <div class="field">
-            <div class="input-field">
-                <label for="Username">Имя:</label>
-                <input asp-for="FirstName" type="text">
-            </div>
-            <span asp-validation-for="FirstName"></span>
-        </div>
-
-        <div class="field">
-            <div class="input-field">
-                <label for="Username">Фамилия:</label>
-                <input asp-for="LastName" type="text">
-            </div>
-            <span asp-validation-for="LastName"></span>
-        </div>
-
-        <div class="field">
-            <div class="input-field">
-                <label for="Username">Пароль:</label>
-                <input asp-for="Password" type="text">
-            </div>
-            <span asp-validation-for="Password"></span>
-        </div>
-
-        <div class="field">
-            <div class="input-field">
-                <label for="Username">Подтвердите пароль:</label>
-                <input asp-for="ConfirmPassword" type="text">
-            </div>
-            <span asp-validation-for="ConfirmPassword"></span>
-        </div>
-
-        <div class="field button-submit">
-            <button type="submit">Зарегистрироваться</button>
-        </div>
-
-        <div class="field goto">
-            <a asp-controller="Auth" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
-                Уже есть аккаунт? Войти
-            </a>
-        </div>
-
-    </form>
-</div>
 </body>
 </html>

@@ -19,6 +19,14 @@ body {
     align-items: center;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #70B7FF 0%, #FFF 100%);
+}
+
 .item {
     margin-left: 0px;
 }

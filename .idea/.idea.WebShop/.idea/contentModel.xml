@@ -6,6 +6,17 @@
     <e p="C:\Users\sapar\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\sapar\AppData\Roaming\JetBrains\Rider2020.2\extensions" t="IncludeRecursive" />
     <e p="C:\Users\sapar\Desktop\aspnet-ng\WebShop" t="IncludeFlat">
+      <e p="EmailService" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EmailService.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EmailService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="MvcClient" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
@@ -457,10 +468,12 @@
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="Auth" t="Include">
+            <e p="EmailConfirmation.cshtml" t="Include" />
             <e p="Login.cshtml" t="Include" />
             <e p="Register.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
+            <e p="_Error.cshtml" t="Include" />
             <e p="_Layout.cshtml" t="Include" />
           </e>
         </e>

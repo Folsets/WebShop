@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcClient", "MvcClient\MvcC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop.Data", "WebShop.Data\WebShop.Data.csproj", "{A46AA757-7593-407E-AEA0-E1DA2D690BE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{91B83C36-A7E7-45BE-B884-5F2F100667C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{A46AA757-7593-407E-AEA0-E1DA2D690BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A46AA757-7593-407E-AEA0-E1DA2D690BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46AA757-7593-407E-AEA0-E1DA2D690BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B83C36-A7E7-45BE-B884-5F2F100667C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B83C36-A7E7-45BE-B884-5F2F100667C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B83C36-A7E7-45BE-B884-5F2F100667C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B83C36-A7E7-45BE-B884-5F2F100667C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

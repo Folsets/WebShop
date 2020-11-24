@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>@ViewData["Title"]</title>
-    <link type="text/css" rel="stylesheet" href="~/css/layout.css" />
+    <link type="text/css" rel="stylesheet" href="~/css/layout.css"/>
+    <link type="text/css" rel="stylesheet" href="~/css/form.css"/>
 </head>
 
 <body>
@@ -13,12 +14,15 @@
         <text>+7(708)999-99-99</text>
     </div>
     <div class="item">
-        <img src="~/images/mail.png"  class="mail"></img>
+        <img src="~/images/mail.png" class="mail"></img>
         WebShopKZ@sobaka.kz
     </div>
 </div>
 
-<div>
+<div class="section">
+    <a href="#" class="field web-shop-kz">
+        WebShopKZ
+    </a>
     @RenderBody()
 </div>
 

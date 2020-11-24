@@ -1,16 +1,4 @@
-﻿body{
-
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #70B7FF 0%, #FFF 100%);
-}
-
-.field {
+﻿.field {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;

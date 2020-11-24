@@ -1,4 +1,5 @@
-﻿@model WebShop.IdentityServer.ViewModels.LoginViewModel
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model WebShop.IdentityServer.ViewModels.LoginViewModel
 
 @{
     Layout = "_Layout";
@@ -12,48 +13,50 @@
     <link type="text/css" rel="stylesheet" href="~/css/form.css"/>
 </head>
 <body>
-<div class="section">
-    <form method="post" asp-controller="Auth" asp-action="Login">
-        <input type="hidden" asp-for="ReturnUrl">
 
-        <a href="#" class="field web-shop-kz">
-            WebShopKZ
+<form method="post" asp-controller="Auth" asp-action="Login">
+    <input type="hidden" asp-for="ReturnUrl">
+
+
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Username">Имя пользователя:</label>
+            <input asp-for="Username" type="text">
+        </div>
+        <span asp-validation-for="Username"></span>
+    </div>
+
+    <div class="field">
+        <div class="input-field">
+            <label for="Password">Пароль:</label>
+            <input asp-for="Password" type="password">
+        </div>
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div class="field goto">
+        <a asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl">
+            Нет учетной записи? Зарегистрироваться
         </a>
+    </div>
 
-        <div class="field">
-            <div class="input-field">
-                <label for="Username">Имя пользователя:</label>
-                <input asp-for="Username" type="text">
-            </div>
-            <span asp-validation-for="Username"></span>
-        </div>
+    <div class="field button-submit">
+        <button type="submit">Войти</button>
+    </div>
 
-        <div class="field">
-            <div class="input-field">
-                <label for="Password">Пароль:</label>
-                <input asp-for="Password" type="password">
-            </div>
-            <span asp-validation-for="Password"></span>
-        </div>
+    <div class="field">
+        <span>@ViewBag.Message</span>
+    </div>
 
-        <div class="field goto">
-            <a asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl">
-                Нет учетной записи? Зарегистрироваться
-            </a>
-        </div>
+    @*         @if (@Model.Failed) *@
+    @*         { *@
+    @*             <div class="field"> *@
+    @*                 <span>Имя пользователя или пароль не верны</span> *@
+    @*             </div> *@
+    @*         } *@
 
-        <div class="field button-submit">
-            <button type="submit">Войти</button>
-        </div>
+</form>
 
-        @if (@Model.Failed)
-        {
-            <div class="field">
-                <span>Имя пользователя или пароль не верны</span>
-            </div>
-        }
-
-    </form>
-</div>
 </body>
 </html>

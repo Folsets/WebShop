@@ -41,6 +41,9 @@ namespace WebShop.IdentityServer
                 config.Password.RequireUppercase = false;
                 config.Password.RequireNonAlphanumeric = false;
                 config.Password.RequiredLength = 4;
+
+                config.SignIn.RequireConfirmedEmail = true;
+                config.User.RequireUniqueEmail = true;
             })
                 .AddEntityFrameworkStores<MyIdentityDbContext>()
                 .AddDefaultTokenProviders();
