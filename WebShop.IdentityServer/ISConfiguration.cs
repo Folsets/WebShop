@@ -35,7 +35,7 @@ namespace WebShop.IdentityServer
                     RedirectUris = new List<string>
                     {
                         $"{Constants.NG_CLIENT_URL}/signin-callback",
-                        //$"{Constants.NG_CLIENT_URL}/assets/silent-callback.html",
+                        $"{Constants.NG_CLIENT_URL}/assets/silent-callback.html",
                     },
                     RequirePkce = true,
                     AllowAccessTokensViaBrowser = true,

@@ -17,8 +17,6 @@
 <form method="post" asp-controller="Auth" asp-action="Login">
     <input type="hidden" asp-for="ReturnUrl">
 
-
-
     <div class="field">
         <div class="input-field">
             <label for="Username">Имя пользователя:</label>
@@ -36,25 +34,26 @@
     </div>
 
     <div class="field goto">
+        <a asp-controller="Auth" asp-action="ForgotPassword" asp-route-returnUrl="@Model.ReturnUrl">
+            Забыли пароль? <i class="fas fa-key"></i>
+        </a>
+    </div>
+
+    <div class="field goto">
         <a asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl">
             Нет учетной записи? Зарегистрироваться
         </a>
     </div>
 
     <div class="field button-submit">
-        <button type="submit">Войти</button>
+        <button type="submit">
+            Войти<i style="margin-left: 15px" class="fas fa-sign-in-alt"></i>
+        </button>
     </div>
 
     <div class="field">
         <span>@ViewBag.Message</span>
     </div>
-
-    @*         @if (@Model.Failed) *@
-    @*         { *@
-    @*             <div class="field"> *@
-    @*                 <span>Имя пользователя или пароль не верны</span> *@
-    @*             </div> *@
-    @*         } *@
 
 </form>
 

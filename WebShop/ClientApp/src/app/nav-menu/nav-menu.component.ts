@@ -10,18 +10,4 @@ export class NavMenuComponent {
 
   constructor(private _authService: AuthService) {
   }
-
-  isExpanded = false;
-
-  collapse() {
-    this.isExpanded = false;
-  }
-
-  toggle() {
-    this.isExpanded = !this.isExpanded;
-  }
-
-  public login = () => {
-    this._authService.login();
-  }
 }

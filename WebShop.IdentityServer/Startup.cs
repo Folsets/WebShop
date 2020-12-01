@@ -1,4 +1,6 @@
+using System;
 using System.IO;
+using EmailService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -71,6 +73,11 @@ namespace WebShop.IdentityServer
                 })
                 .AddDeveloperSigningCredential();
 
+            // Configure Email Service
+            var config = new MailSettings();
+            _configuration.Bind("MailSettings", config);
+            services.AddSingleton(config);
+            services.AddTransient<IMailService, MailService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

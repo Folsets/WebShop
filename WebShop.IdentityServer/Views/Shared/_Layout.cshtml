@@ -4,7 +4,10 @@
     <title>@ViewData["Title"]</title>
     <link type="text/css" rel="stylesheet" href="~/css/layout.css"/>
     <link type="text/css" rel="stylesheet" href="~/css/form.css"/>
+    <meta name="viewport" content="width=device-width">
 </head>
+
+<script src="https://kit.fontawesome.com/64e78f2d6a.js" crossorigin="anonymous"></script>
 
 <body>
 
@@ -20,10 +23,12 @@
 </div>
 
 <div class="section">
-    <a href="#" class="field web-shop-kz">
-        WebShopKZ
-    </a>
-    @RenderBody()
+    <div class="container">
+        <a href="#" class="field web-shop-kz">
+                WebShopKZ
+            </a>
+            @RenderBody()
+    </div>
 </div>
 
 

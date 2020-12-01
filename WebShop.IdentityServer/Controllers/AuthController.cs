@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Security.Policy;
 using System.Threading.Tasks;
 using IdentityModel;
 using IdentityServer4.Extensions;
@@ -10,6 +11,8 @@ using Microsoft.Extensions.Logging;
 using WebShop.Data.Entities;
 using WebShop.Data.Interfaces;
 using WebShop.IdentityServer.ViewModels;
+using EmailService;
+using Org.BouncyCastle.Asn1.X509;
 
 namespace WebShop.IdentityServer.Controllers
 {
@@ -20,12 +23,14 @@ namespace WebShop.IdentityServer.Controllers
         private readonly IClientRepository _clientRepository;
         private readonly IIdentityServerInteractionService _interactionService;
         private readonly ILogger<AuthController> _logger;
+        private readonly IMailService _emailService;
 
         public AuthController(
             SignInManager<IdentityUser> signInManager,
             UserManager<IdentityUser> userManager,
             IClientRepository clientRepository,
             IIdentityServerInteractionService interactionService,
+            IMailService emailService,
             ILogger<AuthController> logger
         )
         {
@@ -33,6 +38,7 @@ namespace WebShop.IdentityServer.Controllers
             _userManager = userManager;
             _interactionService = interactionService;
             _clientRepository = clientRepository;
+            _emailService = emailService;
             _logger = logger;
         }
 
@@ -52,7 +58,7 @@ namespace WebShop.IdentityServer.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Login([FromQuery]string returnUrl)
+        public async Task<IActionResult> Login([FromQuery] string returnUrl)
         {
             return View(new LoginViewModel
             {
@@ -100,7 +106,7 @@ namespace WebShop.IdentityServer.Controllers
         }
 
         [HttpGet]
-        public IActionResult Register([FromQuery]string returnUrl)
+        public IActionResult Register([FromQuery] string returnUrl)
         {
             return View(new RegisterViewModel
             {
@@ -133,31 +139,34 @@ namespace WebShop.IdentityServer.Controllers
                     PhoneNumber = ""
                 });
 
-                // var returnUrl = vm.ReturnUrl;
-                // vm.ReturnUrl = null;
-                // return Redirect(returnUrl);
-
                 // Отправить письмо со ссылкой для подтверждения почты!
                 var confirmationToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 var confirmationLink = Url.Action(nameof(EmailConfirmation).ToString(), "Auth", new
                 {
                     userId = userId,
-                    token = confirmationToken
+                    token = confirmationToken,
+                    returnUrl = vm.ReturnUrl
                 }, Request.Scheme);
 
                 // Пока что просто делаем лог, TODO: создать сервис отправки писемь
                 _logger.Log(LogLevel.Information, confirmationLink);
+                await _emailService.SendAsync(
+                        user.Email,
+                        user.UserName,
+                        "Подтверждение эл. почты",
+                    $"<h1>Спасибо за регистрацию, чтобы активировать вашу учетную запись " +
+                         $"пройдите по следующей ссылке: {confirmationLink}</h1>");
 
-                ViewBag.ErrorTitle = "Подтвердите Email";
-                ViewBag.Error = $"Ссылка для подтверждения вашей электроной почты отправлена на {user.Email}";
-                return View("_Error");
+                ViewBag.Title = "Подтвердите Email";
+                ViewBag.Message = $"Ссылка для подтверждения вашей электроной почты отправлена на {user.Email}";
+                return View("_Confirmation");
             }
 
             return View(vm);
         }
 
         [HttpGet]
-        public async Task<IActionResult> EmailConfirmation(string userId, string token)
+        public async Task<IActionResult> EmailConfirmation(string userId, string token, string returnUrl)
         {
             if (userId == null || token == null)
             {
@@ -179,11 +188,90 @@ namespace WebShop.IdentityServer.Controllers
 
             if (result.Succeeded)
             {
-                return View();
+                ViewBag.Message = "Вы успешно подтвердили адрес электронной почты! Вы можете зайти на сайт указав свой логин и пароль.";
+                return View("Login", new LoginViewModel
+                {
+                    ReturnUrl = returnUrl
+                });
             }
 
             ViewBag.ErrorTitle = "Ошибка подтверждения";
             ViewBag.Error = "Email не может быть подтвержден.";
+            return View("_Error");
+        }
+
+        [HttpGet]
+        public IActionResult ForgotPassword([FromQuery] string returnUrl)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel vm)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(vm.Email);
+                if (user != null && await _userManager.IsEmailConfirmedAsync(user))
+                {
+
+                    var resetPasswordToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+                    var resetPasswordLink = Url.Action("ResetPassword", "Auth", new
+                    {
+                        email = vm.Email,
+                        token = resetPasswordToken,
+                        returnUrl = vm.ReturnUrl
+                    }, Request.Scheme);
+
+                    await _emailService.SendAsync(
+                        vm.Email,
+                        user.UserName,
+                        "Восстановление пароля",
+                        $"<h3>{resetPasswordLink}</h3>");
+
+                    ViewBag.Title = "Успешно отправлен";
+                    ViewBag.Message = "На вашу почту отправлена ссылка для восстановления пароля, перейдите по ссылке чтобы восстановить пароль";
+                    return View("_Confirmation");
+                }
+                ViewBag.Message = "Пользователь с таким email не существует, либо email не подтвержден";
+            }
+
+            return View(vm);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ResetPassword(string token, string email, string returnUrl)
+        {
+            if (token == null || email == null || returnUrl == null)
+            {
+                ViewBag.Title = "Ошибка восстановления";
+                ViewBag.Error = "Невалидный токен восстановления пароля";
+                return View("_Error");
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel vm)
+        {
+            var user = await _userManager.FindByEmailAsync(vm.Email);
+
+            if (user != null)
+            {
+                var result = await _userManager.ResetPasswordAsync(user, vm.Token, vm.Password);
+                if (result.Succeeded)
+                {
+                    ViewBag.Message = "Можете зайти в учетную запись с новыми данными";
+                    return View("Login", new LoginViewModel
+                    {
+                        ReturnUrl = vm.ReturnUrl
+                    });
+                }
+            }
+
+            ViewBag.Title = "Ошибка восстановления";
+            ViewBag.Error = "Невалидный токен восстановления пароля";
             return View("_Error");
         }
     }

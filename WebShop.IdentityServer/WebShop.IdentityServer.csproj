@@ -21,6 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\EmailService\EmailService.csproj" />
       <ProjectReference Include="..\WebShop.Data\WebShop.Data.csproj" />
     </ItemGroup>
 

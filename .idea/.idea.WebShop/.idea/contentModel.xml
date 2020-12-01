@@ -8,7 +8,14 @@
     <e p="C:\Users\sapar\Desktop\aspnet-ng\WebShop" t="IncludeFlat">
       <e p="EmailService" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="EmailModels" t="Include">
+          <e p="MailRequest.cs" t="Include" />
+        </e>
         <e p="EmailService.csproj" t="IncludeRecursive" />
+        <e p="IMailService.cs" t="Include" />
+        <e p="MailService.cs" t="Include" />
+        <e p="MailSettings.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -446,8 +453,10 @@
         </e>
         <e p="ISConfiguration.cs" t="Include" />
         <e p="Models" t="Include">
+          <e p="ForgotPasswordViewModel.cs" t="Include" />
           <e p="LoginViewModel.cs" t="Include" />
           <e p="RegisterViewModel.cs" t="Include" />
+          <e p="ResetPasswordViewModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -468,11 +477,13 @@
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="Auth" t="Include">
-            <e p="EmailConfirmation.cshtml" t="Include" />
+            <e p="ForgotPassword.cshtml" t="Include" />
             <e p="Login.cshtml" t="Include" />
             <e p="Register.cshtml" t="Include" />
+            <e p="ResetPassword.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
+            <e p="_Confirmation.cshtml" t="Include" />
             <e p="_Error.cshtml" t="Include" />
             <e p="_Layout.cshtml" t="Include" />
           </e>
