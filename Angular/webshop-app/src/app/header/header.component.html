@@ -1,0 +1,37 @@
+<header>
+  <div class="container">
+    <div class="header__body">
+      <div class="header__row">
+        <div class="header__contacts">
+          <div class="header__contact">
+            <i class="fas fa-phone-square"></i>
+            +7 (708) 999 99 99
+          </div>
+          <div class="header__contact">
+            <i class="far fa-envelope"></i>
+            WebShopKz@sobaka.kz
+          </div>
+        </div>
+        <div class="header__nav">
+          <div *ngIf="isAuthenticated == false" class="header__auth auth">
+            <i class="fas fa-user auth__icon"></i>
+            <nav class="auth__list">
+              <a (click)="login()">Войти</a> |
+              <a (click)="register()">Регистрация</a>
+            </nav>
+          </div>
+          <div *ngIf="isAuthenticated == true" class="header__user user">
+            <div class="user__avatar">
+              <img src="{{userAvatarPath}}" alt="avatar">
+            </div>
+            <div class="user__name">{{userData.name}}</div>
+            <nav>
+              <br>
+              <a (click)="logout()">Выйти</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

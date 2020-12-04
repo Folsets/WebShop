@@ -1,7 +1,7 @@
 <body>
-  <app-nav-menu></app-nav-menu>
-  <a [routerLink]="['/products']">Products</a> |
-  <a [routerLink]="['/cart']">Cart</a>
-  <br><br>
-  <router-outlet></router-outlet>
+  <div class="wrapper">
+    <app-nav-menu class="header"></app-nav-menu>
+    <router-outlet></router-outlet>
+    <app-footer class="footer"></app-footer>
+  </div>
 </body>

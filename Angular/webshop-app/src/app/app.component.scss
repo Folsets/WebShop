@@ -1,0 +1,17 @@
+/* Comfortaa Font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: linear-gradient(#70B7FF 0%, #FFF 120%);
+  font-family: 'Comfortaa';
+  font-size: 16px;
+}
+
+/*Add flex to content*/
+router-outlet + * {
+  flex: 1 1 auto;
+}

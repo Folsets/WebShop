@@ -1,51 +1,31 @@
-import { Injectable } from '@angular/core';
-import { UserManager, User, UserManagerSettings } from 'oidc-client';
-import { Constants } from '../constants';
-import {Subject} from "rxjs";
+import {Injectable, OnInit} from '@angular/core';
+import { OidcClientNotification, OidcSecurityService, PublicConfiguration} from "angular-auth-oidc-client";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
-  private _userManager: UserManager;
-  private _user: User;
-  private _loginChangedSubject = new Subject<boolean>();
+export class AuthService implements OnInit{
 
-  public loginChanged = this._loginChangedSubject.asObservable();
-
-  private get idpSettings() : UserManagerSettings {
-    return {
-      authority: Constants.idpAuthority,
-      client_id: Constants.client_id,
-      redirect_uri: `${Constants.clientRoot}/signin-callback`,
-      scope: "openid profile WebShop.Api",
-      response_type: "code",
-      post_logout_redirect_uri: `${Constants.clientRoot}/signout-callback`
-    }
+  constructor(
+      public oidcSecurityService: OidcSecurityService
+    ) {
   }
 
-  constructor() {
-    this._userManager = new UserManager(this.idpSettings);
+  login() {
+    this.oidcSecurityService.authorize();
   }
 
-  public login = () => {
-    return this._userManager.signinRedirect();
+  logout() {
+    this.oidcSecurityService.logoff();
   }
 
-  public isAuthenticated = (): Promise<boolean> => {
-    return this._userManager.getUser()
-      .then(user => {
-        if(this._user !== user){
-          this._loginChangedSubject.next(this.checkUser(user))
-        }
-
-        this._user = user;
-
-        return this.checkUser(user);
-      })
+  checkAuth()  {
+    this.oidcSecurityService.checkAuth().subscribe((auth) => {
+      console.log("isAuthenticated? : " + auth);
+    });
   }
 
-  private checkUser = (user: User): boolean => {
-    return !!user && !user.expired;
+  ngOnInit() {
   }
 }

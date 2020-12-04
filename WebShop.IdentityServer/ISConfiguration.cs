@@ -29,28 +29,32 @@ namespace WebShop.IdentityServer
             {
                 new Client
                 {
-                    ClientName = "Angular-Client",
                     ClientId = "angular-client",
                     AllowedGrantTypes = GrantTypes.Code,
                     RedirectUris = new List<string>
                     {
-                        $"{Constants.NG_CLIENT_URL}/signin-callback",
-                        $"{Constants.NG_CLIENT_URL}/assets/silent-callback.html",
+                        $"{Constants.NG_CLIENT_URL}",
                     },
+
+                    PostLogoutRedirectUris =
+                        new List<string> {$"{Constants.NG_CLIENT_URL}"},
+
                     RequirePkce = true,
+
                     AllowAccessTokensViaBrowser = true,
+
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         Constants.WebShopApiResource
                     },
+
                     AllowedCorsOrigins = {$"{Constants.NG_CLIENT_URL}"},
+
                     RequireClientSecret = false,
-                    PostLogoutRedirectUris =
-                        new List<string> {$"{Constants.NG_CLIENT_URL}/signout-callback"},
+
                     RequireConsent = false,
-                    AccessTokenLifetime = 1000,
                 },
 
                 new Client
@@ -108,7 +112,7 @@ namespace WebShop.IdentityServer
     public static class Constants
     {
         public static string WEB_HOST_URL = "https://localhost:5001/";
-        public static string NG_CLIENT_URL = "https://localhost:5007";
+        public static string NG_CLIENT_URL = "http://localhost:4200";
         public static string WebShopApiResource = "WebShop.Api";
     }
 }

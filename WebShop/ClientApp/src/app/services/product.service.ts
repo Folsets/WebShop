@@ -5,12 +5,12 @@ import { Product } from '../entities/product.entity';
 @Injectable({providedIn: 'root'})
 export class ProductService {
     private products: Product[];
-
+    private url = "https://www.bellmts.ca/file_source/mts/assets/img/wireless_devices/Sony_Xperia_XZ1@2x.png";
     constructor() {
         this.products = [
-            {id: 0, name: "name1", price: 100, photo: 'Sony_Xperia_X.png'},
-            {id: 1, name: "name2", price: 140, photo: 'Sony_Xperia_X.png'},
-            {id: 2, name: "name3", price: 250, photo: 'Sony_Xperia_X.png'}
+            {id: 0, name: "name1", price: 100, photo: this.url},
+            {id: 1, name: "name2", price: 140, photo: this.url},
+            {id: 2, name: "name3", price: 250, photo: this.url}
         ]
     }
 

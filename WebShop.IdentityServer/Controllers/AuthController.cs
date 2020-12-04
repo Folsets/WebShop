@@ -161,7 +161,6 @@ namespace WebShop.IdentityServer.Controllers
                 ViewBag.Message = $"Ссылка для подтверждения вашей электроной почты отправлена на {user.Email}";
                 return View("_Confirmation");
             }
-
             return View(vm);
         }
 

@@ -1,12 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { CartComponent } from './components/cart/cart.component';
-import { ProductComponent } from './components/product/product.component';
+import {ProductsComponent} from "./components/products/products.component";
 
 const routes: Routes = [
-	{ path: '', component: ProductComponent },
-	{ path: 'products', component: ProductComponent },
-	{ path: 'cart', component: CartComponent },
+	{ path: '', component: ProductsComponent },
+	{ path: 'products', component: ProductsComponent },
 	{ path: '**', redirectTo: '' }
 ];
 
