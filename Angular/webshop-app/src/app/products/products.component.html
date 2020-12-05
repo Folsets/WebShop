@@ -1,1 +1,33 @@
-<p>products works!</p>
+<div class="products">
+  <div class="container">
+    <div class="products__row">
+
+      <div class="products__top">
+        <div class="products__left">
+          <div class="products__logo">
+            <a [routerLink]="">WebShopKZ</a>
+          </div>
+          <div class="products__search" tabindex="1">
+            <input type="text" class="searchTerm" placeholder="П о и с к">
+            <button class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="products__right">
+          <div class="products__wish">
+            <i class="far fa-heart"></i>
+            <a>Понравилось</a>
+          </div>
+          <div class="products__cart">
+            <i class="fas fa-shopping-cart"></i>
+            <a>Корзина</a>
+          </div>
+        </div>
+      </div>
+
+      <app-product-list class="products__bottom"></app-product-list>
+
+    </div>
+  </div>
+</div>

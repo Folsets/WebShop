@@ -7,6 +7,10 @@
   padding: 40px 20px 0 20px;
 }
 
+/*Add flex to content*/
+router-outlet + * {
+  flex: 1 1 auto;
+}
 
 /* Обнуление */
 * {
@@ -77,6 +81,7 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 a {
   color: #000;

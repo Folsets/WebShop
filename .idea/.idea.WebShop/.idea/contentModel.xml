@@ -86,6 +86,7 @@
           <e p="node_modules\ajv" t="IncludeRecursive" />
           <e p="node_modules\ajv-keywords" t="IncludeRecursive" />
           <e p="node_modules\angular-auth-oidc-client" t="IncludeRecursive" />
+          <e p="node_modules\angular-i18n" t="IncludeRecursive" />
           <e p="node_modules\ansi-colors" t="IncludeRecursive" />
           <e p="node_modules\arg" t="IncludeRecursive" />
           <e p="node_modules\array-union" t="IncludeRecursive" />
@@ -165,50 +166,44 @@
               <e p="app-routing.module.ts" t="Include" />
               <e p="app.component.html" t="Include" />
               <e p="app.component.scss" t="Include" />
-              <e p="app.component.spec.ts" t="Include" />
               <e p="app.component.ts" t="Include" />
               <e p="app.module.ts" t="Include" />
               <e p="Auth" t="Include" />
               <e p="footer" t="Include">
                 <e p="footer.component.html" t="Include" />
                 <e p="footer.component.scss" t="Include" />
-                <e p="footer.component.spec.ts" t="Include" />
                 <e p="footer.component.ts" t="Include" />
               </e>
               <e p="header" t="Include">
                 <e p="header.component.html" t="Include" />
                 <e p="header.component.scss" t="Include" />
-                <e p="header.component.spec.ts" t="Include" />
                 <e p="header.component.ts" t="Include" />
               </e>
               <e p="products" t="Include">
                 <e p="product-details" t="Include">
                   <e p="product-details.component.html" t="Include" />
                   <e p="product-details.component.scss" t="Include" />
-                  <e p="product-details.component.spec.ts" t="Include" />
                   <e p="product-details.component.ts" t="Include" />
                 </e>
                 <e p="product-edit" t="Include">
                   <e p="product-edit.component.html" t="Include" />
                   <e p="product-edit.component.scss" t="Include" />
-                  <e p="product-edit.component.spec.ts" t="Include" />
                   <e p="product-edit.component.ts" t="Include" />
                 </e>
                 <e p="product-list" t="Include">
                   <e p="product-item" t="Include">
                     <e p="product-item.component.html" t="Include" />
                     <e p="product-item.component.scss" t="Include" />
-                    <e p="product-item.component.spec.ts" t="Include" />
                     <e p="product-item.component.ts" t="Include" />
                   </e>
                   <e p="product-list.component.html" t="Include" />
                   <e p="product-list.component.scss" t="Include" />
-                  <e p="product-list.component.spec.ts" t="Include" />
                   <e p="product-list.component.ts" t="Include" />
                 </e>
+                <e p="product.model.ts" t="Include" />
+                <e p="product.service.ts" t="Include" />
                 <e p="products.component.html" t="Include" />
                 <e p="products.component.scss" t="Include" />
-                <e p="products.component.spec.ts" t="Include" />
                 <e p="products.component.ts" t="Include" />
               </e>
             </e>
@@ -658,6 +653,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="ClientsController.cs" t="Include" />
+          <e p="ProductsController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -688,6 +684,7 @@
           <e p="Delivery.cs" t="Include" />
           <e p="Order.cs" t="Include" />
           <e p="Product.cs" t="Include" />
+          <e p="ProductDTO.cs" t="Include" />
           <e p="Storage.cs" t="Include" />
         </e>
         <e p="Enums" t="Include">
@@ -713,6 +710,7 @@
         </e>
         <e p="Repos" t="Include">
           <e p="ClientRepository.cs" t="Include" />
+          <e p="ProductRepository.cs" t="Include" />
         </e>
         <e p="WebShop.Data.csproj" t="IncludeRecursive" />
       </e>

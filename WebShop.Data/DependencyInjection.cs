@@ -9,6 +9,7 @@ namespace WebShop.Data
         public static IServiceCollection AddDataRepositories(this IServiceCollection services)
         {
             services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
             // More to add...
 
             return services;

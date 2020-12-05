@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using IdentityModel;
+using IdentityServer4.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -29,6 +30,8 @@ namespace WebShop.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDataRepositories();
+
+            services.AddCors();
 
             services.AddControllers();
 
@@ -109,6 +112,11 @@ namespace WebShop.Api
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseCors(
+                options =>
+                {
+                    options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+                });
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }

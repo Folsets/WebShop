@@ -1,1 +1,39 @@
-<p>product-item works!</p>
+<div class="product-item">
+  <div class="product-item__row">
+    <div class="product-item__wish">
+      <div class="wish"><i class="fa fa-heart"></i><i class="far fa-heart"></i></div>
+      <div class="discount" *ngIf="product.discount">
+        <span>-{{product.discount}}%</span>
+      </div>
+    </div>
+    <div class="product-item__photo">
+      <img src="{{product.photos[1]}}" alt="photo">
+    </div>
+    <div class="product-item__info">
+      <div class="product-item__title">
+        <span>{{product.name}}</span>
+      </div>
+      <div class="product-item__price">
+        <div *ngIf="!product.discount">
+          {{product.price | currency : 'KZT': 'symbol-narrow'}}
+        </div>
+        <div *ngIf="product.discount" class="product-item__discount">
+          <p>{{(product.price - (product.price * (product.discount / 100))) | currency : 'KZT': 'symbol-narrow'}}</p>
+          <p class="line"></p>
+          <p>{{product.price | currency : 'KZT': 'symbol-narrow'}}</p>
+        </div>
+      </div>
+      <div class="product-item__characteristics">
+        <ul>
+          <li>- {{product.characteristics[0]? product.characteristics[0] : ""}}</li>
+          <li>- {{product.characteristics[1]? product.characteristics[1] : ""}}</li>
+          <li>- {{product.characteristics[2]? product.characteristics[2] : ""}}</li>
+          <li>- {{product.characteristics[3]? product.characteristics[3] : ""}}</li>
+        </ul>
+      </div>
+      <a class="product-item__buy">
+        Купить
+      </a>
+    </div>
+  </div>
+</div>

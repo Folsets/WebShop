@@ -29,24 +29,39 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="914693a4-b818-46d1-9440-13050654c8bd" name="Default Changelist" comment="angular">
+    <list default="true" id="914693a4-b818-46d1-9440-13050654c8bd" name="Default Changelist" comment="init product service">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/auth/auth.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/auth/auth.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/products.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/products.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/app/products/products.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Angular/webshop-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebShop.IdentityServer/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.IdentityServer/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/webshop-app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/webshop-app/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.Data/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.Data/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebShop.Data/Entities/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebShop.Data/Entities/Product.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -85,26 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Program.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Options/AuthorizeCheckOperationFilter.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Controllers/ClientsController.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/_ViewImports.cshtml" />
-        <option value="$PROJECT_DIR$/WebShop.Data/Repos/ClientRepository.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Shared/Content/layout.css" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Models/RegisterViewModel.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Startup.cs" />
-        <option value="$PROJECT_DIR$/EmailService/Class1.cs" />
-        <option value="$PROJECT_DIR$/WebShop.Api/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Auth/Register.cshtml" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Auth/EmailConfirmation.cshtml" />
-        <option value="$PROJECT_DIR$/EmailService/EmailModels/MailRequest.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/appsettings.Development.json" />
-        <option value="$PROJECT_DIR$/EmailService/MailSettings.cs" />
-        <option value="$PROJECT_DIR$/EmailService/EmailService.csproj" />
-        <option value="$PROJECT_DIR$/EmailService/IMailService.cs" />
-        <option value="$PROJECT_DIR$/EmailService/DependencyInjection.cs" />
-        <option value="$PROJECT_DIR$/EmailService/MailService.cs" />
-        <option value="$PROJECT_DIR$/WebShop.IdentityServer/Startup.cs" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/appsettings.json" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/wwwroot/css/form.css" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Auth/Login.cshtml" />
@@ -119,12 +114,10 @@
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Shared/_Confirmation.cshtml" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/wwwroot/css/layout.css" />
         <option value="$PROJECT_DIR$/Angular/Class1.cs" />
-        <option value="$PROJECT_DIR$/Angular/webshop-app/src/index.html" />
         <option value="$PROJECT_DIR$/WebShop/ClientApp/src/styles.css" />
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/footer/footer.component.html" />
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/footer/footer.component.scss" />
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/Controllers/AuthController.cs" />
         <option value="$PROJECT_DIR$/WebShop.IdentityServer/ISConfiguration.cs" />
@@ -133,9 +126,31 @@
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.ts" />
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.html" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/tsconfig.json" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/tsconfig.app.json" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/tsconfig.spec.json" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/Angular/webshop-app/src/styles.scss" />
         <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/header/header.component.scss" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/styles.scss" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/products.component.html" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/products.component.scss" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.html" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.ts" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.scss" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Repos/ProductRepositor y.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/DependencyInjection.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/Product.cs" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Entities/ProductDTO.cs" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/index.html" />
+        <option value="$PROJECT_DIR$/WebShop.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product.model.ts" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-list.component.ts" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product.service.ts" />
+        <option value="$PROJECT_DIR$/WebShop.Data/Repos/ProductRepository.cs" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.html" />
+        <option value="$PROJECT_DIR$/Angular/webshop-app/src/app/products/product-list/product-item/product-item.component.scss" />
+        <option value="$PROJECT_DIR$/WebShop.Api/Controllers/ProductsController.cs" />
       </list>
     </option>
   </component>
@@ -149,8 +164,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlserver" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994525" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010954" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -158,7 +173,7 @@
     <property name="ts.external.directory.path" value="C:\Users\sapar\Desktop\aspnet-ng\WebShop\WebShop\ClientApp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebShop.IdentityServer">
+  <component name="RunManager" selected="Compound.Swagger&amp;IdentityServer">
     <configuration name="RunAll" type="CompoundRunConfigurationType">
       <toRun name="WebShop" type="LaunchSettings" />
       <toRun name="WebShop.Api" type="LaunchSettings" />
@@ -280,7 +295,8 @@
       <workItem from="1606840532803" duration="3007000" />
       <workItem from="1607089803687" duration="8414000" />
       <workItem from="1607112382032" duration="14147000" />
-      <workItem from="1607168268915" duration="7424000" />
+      <workItem from="1607168268915" duration="7653000" />
+      <workItem from="1607176008922" duration="30618000" />
     </task>
     <task id="LOCAL-00001" summary="Updated structure, updated DB, views and so on.">
       <created>1606087342958</created>
@@ -317,7 +333,35 @@
       <option name="project" value="LOCAL" />
       <updated>1607122663094</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ng g c products/...">
+      <created>1607175746037</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607175746037</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ng g c products/...">
+      <created>1607175761394</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607175761394</updated>
+    </task>
+    <task id="LOCAL-00008" summary="init product service">
+      <created>1607175891119</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607175891119</updated>
+    </task>
+    <task id="LOCAL-00009" summary="init product service">
+      <created>1607175898407</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607175898407</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +398,9 @@
     <MESSAGE value="Updated structure, updated DB, views and so on." />
     <MESSAGE value="Updated" />
     <MESSAGE value="angular" />
-    <option name="LAST_COMMIT_MESSAGE" value="angular" />
+    <MESSAGE value="ng g c products/..." />
+    <MESSAGE value="init product service" />
+    <option name="LAST_COMMIT_MESSAGE" value="init product service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="236" key="#Notifications" timestamp="1605548776259">
@@ -375,11 +421,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="257" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605894715276" />
-    <state width="794" height="466" key="DebuggerActiveHint" timestamp="1606670132987">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1368" height="589" key="DebuggerActiveHint" timestamp="1607204282876">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="469" height="466" key="DebuggerActiveHint/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606523190985" />
     <state width="794" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1606670132987" />
+    <state width="1368" height="589" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607204282876" />
     <state x="438" y="191" key="EditFileWatcherDialog" timestamp="1607113018897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -392,115 +439,136 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="453" y="116" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605548747609" />
-    <state width="1493" height="305" key="GridCell.Tab.0.bottom" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.0.bottom" timestamp="1607206466918">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.0.center" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466918" />
+    <state width="1865" height="234" key="GridCell.Tab.0.center" timestamp="1607206466918">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.0.left" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466918" />
+    <state width="1865" height="234" key="GridCell.Tab.0.left" timestamp="1607206466918">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.0.right" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466918" />
+    <state width="1865" height="234" key="GridCell.Tab.0.right" timestamp="1607206466918">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.1.bottom" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466918" />
+    <state width="1865" height="234" key="GridCell.Tab.1.bottom" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.1.center" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.1.center" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.1.left" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.1.left" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.1.right" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.1.right" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.2.bottom" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.2.bottom" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.2.center" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.2.center" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.2.left" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.2.left" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.2.right" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.2.right" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.3.bottom" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.3.bottom" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.3.center" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.3.center" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.3.left" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.3.left" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.3.right" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.3.right" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.4.bottom" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.4.bottom" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.4.center" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.4.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.4.center" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.4.left" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.4.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.4.left" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
-    <state width="1493" height="305" key="GridCell.Tab.4.right" timestamp="1607123826777">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1865" height="234" key="GridCell.Tab.4.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
+    <state width="1865" height="234" key="GridCell.Tab.4.right" timestamp="1607206466722">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="305" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607123826777" />
     <state width="1493" height="65" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1606672425153" />
+    <state width="1865" height="234" key="GridCell.Tab.4.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607206466722" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1607112429431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607112429431" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1605732190940" />
-    <state x="587" y="101" key="RiderGenerateDialog" timestamp="1605894830846">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="734" y="127" key="RiderGenerateDialog" timestamp="1607199632295">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="587" y="101" key="RiderGenerateDialog/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605894830846" />
+    <state x="734" y="127" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607199632295" />
     <state x="219" y="75" key="SettingsEditor" timestamp="1607169211390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -515,11 +583,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606216014814" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607122677899">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1607175902387">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607122677899" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605552617405" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607175902387" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1606669406082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -537,11 +606,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="441" y="11" width="837" height="801" key="find.popup/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1605893894649" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1606468274908">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="531" y="236" key="run.anything.popup" timestamp="1607182022660">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1606468274908" />
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605552608406" />
+    <state x="531" y="236" key="run.anything.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1607182022660" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606089360735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
