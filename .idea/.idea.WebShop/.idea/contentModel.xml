@@ -21,6 +21,32 @@
           <e p=".editorconfig" t="Include" />
           <e p=".gitignore" t="Include" />
           <e p="angular.json" t="Include" />
+          <e p="dist" t="Include">
+            <e p="webshop-app" t="Include">
+              <e p="assets" t="Include">
+                <e p="images" t="Include">
+                  <e p="avatar.png" t="Include" />
+                  <e p="icons" t="Include">
+                    <e p="mail.png" t="Include" />
+                    <e p="phone.png" t="Include" />
+                    <e p="user.png" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="favicon.ico" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="main.js" t="Include" />
+              <e p="main.js.map" t="Include" />
+              <e p="polyfills.js" t="Include" />
+              <e p="polyfills.js.map" t="Include" />
+              <e p="runtime.js" t="Include" />
+              <e p="runtime.js.map" t="Include" />
+              <e p="styles.js" t="Include" />
+              <e p="styles.js.map" t="Include" />
+              <e p="vendor.js" t="Include" />
+              <e p="vendor.js.map" t="Include" />
+            </e>
+          </e>
           <e p="e2e" t="Include">
             <e p="protractor.conf.js" t="Include" />
             <e p="src" t="Include">
@@ -142,10 +168,7 @@
               <e p="app.component.spec.ts" t="Include" />
               <e p="app.component.ts" t="Include" />
               <e p="app.module.ts" t="Include" />
-              <e p="Auth" t="Include">
-                <e p="auth.service.spec.ts" t="Include" />
-                <e p="auth.service.ts" t="Include" />
-              </e>
+              <e p="Auth" t="Include" />
               <e p="footer" t="Include">
                 <e p="footer.component.html" t="Include" />
                 <e p="footer.component.scss" t="Include" />
@@ -157,6 +180,36 @@
                 <e p="header.component.scss" t="Include" />
                 <e p="header.component.spec.ts" t="Include" />
                 <e p="header.component.ts" t="Include" />
+              </e>
+              <e p="products" t="Include">
+                <e p="product-details" t="Include">
+                  <e p="product-details.component.html" t="Include" />
+                  <e p="product-details.component.scss" t="Include" />
+                  <e p="product-details.component.spec.ts" t="Include" />
+                  <e p="product-details.component.ts" t="Include" />
+                </e>
+                <e p="product-edit" t="Include">
+                  <e p="product-edit.component.html" t="Include" />
+                  <e p="product-edit.component.scss" t="Include" />
+                  <e p="product-edit.component.spec.ts" t="Include" />
+                  <e p="product-edit.component.ts" t="Include" />
+                </e>
+                <e p="product-list" t="Include">
+                  <e p="product-item" t="Include">
+                    <e p="product-item.component.html" t="Include" />
+                    <e p="product-item.component.scss" t="Include" />
+                    <e p="product-item.component.spec.ts" t="Include" />
+                    <e p="product-item.component.ts" t="Include" />
+                  </e>
+                  <e p="product-list.component.html" t="Include" />
+                  <e p="product-list.component.scss" t="Include" />
+                  <e p="product-list.component.spec.ts" t="Include" />
+                  <e p="product-list.component.ts" t="Include" />
+                </e>
+                <e p="products.component.html" t="Include" />
+                <e p="products.component.scss" t="Include" />
+                <e p="products.component.spec.ts" t="Include" />
+                <e p="products.component.ts" t="Include" />
               </e>
             </e>
             <e p="assets" t="Include">

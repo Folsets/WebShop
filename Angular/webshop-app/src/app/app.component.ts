@@ -1,18 +1,22 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {OidcSecurityService} from "angular-auth-oidc-client";
-import {AuthService} from "./auth/auth.service";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  constructor(public oidc: OidcSecurityService) {}
+export class AppComponent implements OnInit, OnDestroy{
+  private checkAuthSub: Subscription;
 
+  constructor(public oidc: OidcSecurityService) {}
 
   ngOnInit() {
     this.oidc.checkAuth().subscribe();
   }
 
+  ngOnDestroy() {
+    this.checkAuthSub.unsubscribe();
+  }
 }

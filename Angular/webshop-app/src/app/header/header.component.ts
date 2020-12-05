@@ -1,5 +1,4 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {AuthService} from "../auth/auth.service";
 import {Subscription} from "rxjs";
 import {OidcSecurityService} from "angular-auth-oidc-client";
 
@@ -12,33 +11,41 @@ export class HeaderComponent implements OnInit, OnDestroy {
   public isAuthenticated : boolean;
   public userAvatarPath = "assets/images/avatar.png";
   public userData;
-  private sub: Subscription;
+  private userDataSub: Subscription;
+  private isAuthSub: Subscription;
 
-  constructor(private authService: AuthService, public oidcSecurityService: OidcSecurityService) { }
+  constructor(private oidc: OidcSecurityService) { }
 
   login() {
-    this.authService.login();
+    this.oidc.authorize();
   }
 
   logout() {
-    this.authService.logout();
+    this.oidc.logoffAndRevokeTokens().subscribe(data => {
+      console.log("After logout: ", data);
+    });
   }
 
   register() {
-    this.authService.register();
+    this.oidc.authorize({
+      customParams: {"mode":"register"}
+    });
   }
 
   ngOnInit(): void {
-    this.sub = this.authService.isAuthenticated$.subscribe(isAuth => {
-      this.isAuthenticated = isAuth;
+    this.userDataSub = this.oidc.userData$.subscribe(data => {
+      this.userData = data;
     });
-    this.authService.userData$.subscribe(userData => {
-      this.userData = userData;
+    this.oidc.isAuthenticated$.subscribe(isAuth => {
+      if (this.isAuthenticated != isAuth){
+        this.isAuthenticated = isAuth;
+      }
     });
   }
 
   ngOnDestroy() {
-    this.sub.unsubscribe();
+    this.userDataSub.unsubscribe();
+    this.isAuthSub.unsubscribe();
   }
 
 }

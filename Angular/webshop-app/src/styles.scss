@@ -1,12 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 .container {
   max-width: 1778px;
   margin: auto;
   padding: 40px 20px 0 20px;
 }
-
-
 
 
 /* Обнуление */
@@ -53,8 +52,8 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Comfortaa';
 }
-
 
 input,
 button,

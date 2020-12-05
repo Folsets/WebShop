@@ -21,13 +21,18 @@
             </nav>
           </div>
           <div *ngIf="isAuthenticated == true" class="header__user user">
-            <div class="user__avatar">
-              <img src="{{userAvatarPath}}" alt="avatar">
+            <div class="user__info">
+              <div class="user__avatar">
+                <img src="{{userAvatarPath}}" alt="avatar">
+              </div>
+              <div class="user__name">{{userData.name}}</div>
             </div>
-            <div class="user__name">{{userData.name}}</div>
-            <nav>
-              <br>
-              <a (click)="logout()">Выйти</a>
+            <nav class="user__menu">
+              <ul>
+                <li>
+                  <a (click)="logout()"><i class="fas fa-sign-out-alt"></i>Выйти</a>
+                </li>
+              </ul>
             </nav>
           </div>
         </div>

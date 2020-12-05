@@ -34,7 +34,6 @@
 }
 
 .header__nav {
-
 }
 
 .header__auth {
@@ -50,26 +49,79 @@
   transform: scale(1.5);
   margin: 0 15px 4px 0;
 }
+.auth__list {
+  a {
+    display: inline-block;
+    &:hover {
+      font-weight: 700;
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
 
 .header__user {
 
 }
 
 .user{
+  margin-top: 25px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 20px;
+  &:hover{
+    .user__menu {
+      visibility: visible;
+    }
+  }
 }
+
+.user__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+}
+
 .user__avatar{
   border-radius: 50%;
   overflow: hidden;
   width: 45px;
   height: 45px;
   margin: 0 10px 0 0;
+  img {
+    width: 45px;
+    height: 45px;
+  }
 }
-.user__avatar img {
-  width: 45px;
-  height: 45px;
-}
-.user__name {}
 
+.user__name {
+}
+
+.user__menu {
+  visibility: hidden;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  i {
+    display: inline;
+    padding-right: 3px;
+  }
+  a {
+    background-color: #39F;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: -15px;
+    font-size: inherit;
+    color: #fff;
+    &:hover {
+      transform: scale(0.92);
+      background: #006ccb;
+    }
+  }
+}
 

@@ -60,6 +60,13 @@ namespace WebShop.IdentityServer.Controllers
         [HttpGet]
         public async Task<IActionResult> Login([FromQuery] string returnUrl)
         {
+            if (returnUrl.Contains("mode=register"))
+            {
+                return RedirectToAction("Register", "Auth",
+                new RegisterViewModel{
+                    ReturnUrl = returnUrl
+                });
+            }
             return View(new LoginViewModel
             {
                 ReturnUrl = returnUrl

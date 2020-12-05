@@ -6,6 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
+import { ProductEditComponent } from './products/product-edit/product-edit.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { ProductItemComponent } from './products/product-list/product-item/product-item.component';
 
 export function configureAuth(oidcConfigService: OidcConfigService) {
   return () =>
@@ -19,6 +24,10 @@ export function configureAuth(oidcConfigService: OidcConfigService) {
       // silentRenew: true,
       // silentRenewUrl: `${window.location.origin}/silent-renew.html`,
       logLevel: LogLevel.Debug,
+      // Чтобы получить refresh token
+      // silentRenew: true,
+      // silentRenewUrl: "http://localhost:4200"
+      eagerLoadAuthWellKnownEndpoints: true
     });
 }
 
@@ -26,7 +35,12 @@ export function configureAuth(oidcConfigService: OidcConfigService) {
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsComponent,
+    ProductListComponent,
+    ProductEditComponent,
+    ProductDetailsComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
